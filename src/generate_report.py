@@ -305,7 +305,7 @@ def build_context_from_row(df_columns, row_visual):
                 val = "-"
 
         # Clean trailing .0 from serial numbers or float representation of integers
-        if val != "-" and val.endswith('.0') and 'heateramp' not in raw_key.lower():
+        if val != "-" and val.endswith('.0') and 'heateramp' not in raw_key.lower() and 'ambient' not in raw_key.lower():
             try:
                 f_val = float(val)
                 if f_val.is_integer():
@@ -320,7 +320,11 @@ def build_context_from_row(df_columns, row_visual):
         elif 'humidity' in raw_key.lower() and val != "-":
             if '%' not in val: val = f"{val}%"
         elif 'ambient' in raw_key.lower() and val != "-":
-            if '°' not in val: val = f"{val} °C"
+            clean_val = str(val).replace('°C', '').replace('°', '').strip()
+            try:
+                val = f"{float(clean_val):.1f} °C"
+            except ValueError:
+                if '°' not in str(val): val = f"{val} °C"
         elif 'heateramp' in raw_key.lower() and val != "-":
             val = format_heater_amp_val(val)
         elif raw_key.strip() == '{{ panel.db_level }}' and (not val or val == "-"):
