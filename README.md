@@ -57,6 +57,15 @@ WRAITH APP/
 │   ├── IR UE - EET - PAHANG/
 │   ├── IR UE - TIANU/
 │   └── IR UE TEV - EET - PAHANG/
+├── PO FOLDER EXAMPLE/                  # Full Reference PO Workspace (Standard 01-08 Structure)
+│   ├── 01. FULL REPORT/
+│   ├── 02. QUICK REPORT/               # Reference Quick Report docx & pdf files
+│   ├── 03. RAW MATERIAL/               # Reference site photos & radiometric thermal images
+│   ├── 04. TESTSHEET/                  # Reference test records (xlsx & pdf)
+│   ├── 05. TEMPLATE/                   # Substation docx template set
+│   ├── 06. EXCELL MAPPING/             # Working Master List.xlsx with mapped substations
+│   ├── 07. OUTPUT FILE/
+│   └── 08. INSERT SOUND/
 ├── build_app.py                        # Standalone PyInstaller build script (Directory mode)
 ├── build_onefile.py                    # PyInstaller Single-File build script
 ├── copy_assets.py                      # Post-build asset distribution helper
