@@ -41,7 +41,17 @@ WRAITH APP/
 │   ├── final_insert_sounds.py          # Ultrasound WAV embedder
 │   ├── flir_libs/                      # Native FLIR SDK & Report runtime libraries
 │   └── ...
-├── templates/                          # Standardized CBM Word (.docx) templates
+├── FOLDER TEMPLATE/                    # Standardized CBM PO Folder & Scaffolding Blueprints
+│   ├── 33kV (By Location)/             # Image sorting & folder schemes
+│   ├── 33kV (By Panel)/
+│   ├── RMU/
+│   ├── VCB (By Location)/
+│   ├── VCB (By Panel)/
+│   ├── 06. EXCELL MAPPING/
+│   │   └── Master List.xlsx            # Standard Master List schema template
+│   └── create_33kv_template.ps1        # Dynamic multi-switchgear PO folder generator
+├── templates/                          # Standardized CBM Word (.docx) & Excel templates
+│   ├── Master List.xlsx                # Official Master List with intact formula coordinates
 │   ├── IR - EET - PAHANG/
 │   ├── IR - TIANU/
 │   ├── IR UE - EET - PAHANG/
