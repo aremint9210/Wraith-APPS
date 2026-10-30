@@ -17,6 +17,13 @@ dist/
 07. OUTPUT FILE/INDIVIDUAL/*
 !07. OUTPUT FILE/INDIVIDUAL/.gitkeep
 
+# Ignore raw photos in example workspace (keep folder structure only)
+PO FOLDER EXAMPLE/03. RAW MATERIAL/**/*.jpg
+PO FOLDER EXAMPLE/03. RAW MATERIAL/**/*.JPG
+PO FOLDER EXAMPLE/03. RAW MATERIAL/**/*.jpeg
+PO FOLDER EXAMPLE/03. RAW MATERIAL/**/*.png
+PO FOLDER EXAMPLE/03. RAW MATERIAL/**/*.PNG
+
 # IDEs & Editor files
 .vscode/
 .idea/
