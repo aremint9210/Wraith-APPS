@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller / Build outputs (do not commit binaries/build caches to repo)
+build/
+dist/
+*.spec.bak
+*.zip
+
+# Microsoft Office temporary files
+~$*
+*.tmp
+
+# User output / generated reports
+07. OUTPUT FILE/INDIVIDUAL/*
+!07. OUTPUT FILE/INDIVIDUAL/.gitkeep
+
+# IDEs & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & logs
+*.log
+.env
+venv/
+.venv/

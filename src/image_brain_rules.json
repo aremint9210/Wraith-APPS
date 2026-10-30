@@ -1,0 +1,95 @@
+{
+  "version": "2026.2",
+  "name": "WRAITH Dynamic CBM Substation Multi-Equipment Intelligence Brain",
+  "description": "Dynamic multi-equipment classification rules, slot schemas, and heuristics for arbitrarily configured substations (1..N SWG, 1..N TX, 1..N FP/LVDB, 1..4 Battery Banks, 1..2 Black Boxes, 1..10+ Panels)",
+  "equipment_profiles": {
+    "SWITCHGEAR_1": {
+      "types": ["RMU", "MRMU", "SF6", "VCB", "AIS", "GIS", "H-POLE", "AIR INSULATED"],
+      "manufacturers": ["INDKOM", "SCHNEIDER", "TAMCO", "ABB", "SIEMENS", "LITEN", "EATON", "MEIDEN"],
+      "overview_slots": {
+        "1": {"visual": "1.jpg", "ir": "2.jpg", "name": "SWG_OVERVIEW_FRONT", "wide_angle_preferred": true},
+        "2": {"visual": "3.jpg", "ir": "4.jpg", "name": "SWG_OVERVIEW_TOP", "wide_angle_preferred": true},
+        "3": {"visual": "5.jpg", "ir": "6.jpg", "name": "SWG_OVERVIEW_BOTTOM", "wide_angle_preferred": true},
+        "4": {"visual": "7.jpg", "ir": "8.jpg", "name": "SWG_OVERVIEW_REAR"},
+        "5": {"visual": "9.jpg", "ir": "10.jpg", "name": "SWG_OVERVIEW_LHS"},
+        "6": {"visual": "11.jpg", "ir": "12.jpg", "name": "SWG_OVERVIEW_RHS"}
+      },
+      "panel_slots": {
+        "panel_1": {"cable_comp": {"visual": "13.jpg", "ir": "14.jpg"}, "cable_entry": {"visual": "15.jpg", "ir": "16.jpg"}},
+        "panel_2": {"cable_comp": {"visual": "17.jpg", "ir": "18.jpg"}, "cable_entry": {"visual": "19.jpg", "ir": "20.jpg"}},
+        "panel_3": {"cable_comp": {"visual": "21.jpg", "ir": "22.jpg"}, "cable_entry": {"visual": "23.jpg", "ir": "24.jpg"}},
+        "panel_4": {"cable_comp": {"visual": "25.jpg", "ir": "26.jpg"}, "cable_entry": {"visual": "27.jpg", "ir": "28.jpg"}},
+        "panel_5": {"cable_comp": {"visual": "29.jpg", "ir": "30.jpg"}, "cable_entry": {"visual": "31.jpg", "ir": "32.jpg"}},
+        "panel_6": {"cable_comp": {"visual": "33.jpg", "ir": "34.jpg"}, "cable_entry": {"visual": "35.jpg", "ir": "36.jpg"}},
+        "panel_7": {"cable_comp": {"visual": "37.jpg", "ir": "38.jpg"}, "cable_entry": {"visual": "39.jpg", "ir": "40.jpg"}},
+        "panel_8": {"cable_comp": {"visual": "41.jpg", "ir": "42.jpg"}, "cable_entry": {"visual": "43.jpg", "ir": "44.jpg"}},
+        "panel_9": {"cable_comp": {"visual": "45.jpg", "ir": "46.jpg"}, "cable_entry": {"visual": "47.jpg", "ir": "48.jpg"}},
+        "panel_10": {"cable_comp": {"visual": "49.jpg", "ir": "50.jpg"}, "cable_entry": {"visual": "51.jpg", "ir": "52.jpg"}}
+      },
+      "indkom_fuse_compartment_rule": true
+    },
+    "TRANSFORMER_TX1": {
+      "pages": [27, 28, 29, 30, 31, 32, 33, 34],
+      "overview": {"visual": "53.jpg", "ir": "54.jpg", "name": "TX1_OVERVIEW", "wide_angle_preferred": true},
+      "overview_top": {"visual": "55.jpg", "ir": "56.jpg", "name": "TX1_OVERVIEW_TOP"},
+      "hv_bushing": {"visual": "57.jpg", "ir": "58.jpg", "name": "TX1_HV_BUSHING"},
+      "hv_cable": {"visual": "59.jpg", "ir": "60.jpg", "name": "TX1_HV_CABLE"},
+      "hv_cable_split": {"visual": "61.jpg", "ir": "62.jpg", "name": "TX1_HV_CABLE_SPLIT"},
+      "lv_bushing": {"visual": "63.jpg", "ir": "64.jpg", "name": "TX1_LV_BUSHING"},
+      "lv_cable": {"visual": "65.jpg", "ir": "66.jpg", "name": "TX1_LV_CABLE"},
+      "lv_cable_split": {"visual": "67.jpg", "ir": "68.jpg", "name": "TX1_LV_CABLE_SPLIT"}
+    },
+    "TRANSFORMER_TX2": {
+      "pages": [35, 36, 37, 38, 39, 40, 41, 42],
+      "overview": {"visual": "69.jpg", "ir": "70.jpg", "name": "TX2_OVERVIEW", "wide_angle_preferred": true},
+      "overview_top": {"visual": "71.jpg", "ir": "72.jpg", "name": "TX2_OVERVIEW_TOP"},
+      "hv_bushing": {"visual": "73.jpg", "ir": "74.jpg", "name": "TX2_HV_BUSHING"},
+      "hv_cable": {"visual": "75.jpg", "ir": "76.jpg", "name": "TX2_HV_CABLE"},
+      "hv_cable_split": {"visual": "77.jpg", "ir": "78.jpg", "name": "TX2_HV_CABLE_SPLIT"},
+      "lv_bushing": {"visual": "79.jpg", "ir": "80.jpg", "name": "TX2_LV_BUSHING"},
+      "lv_cable": {"visual": "81.jpg", "ir": "82.jpg", "name": "TX2_LV_CABLE"},
+      "lv_cable_split": {"visual": "83.jpg", "ir": "84.jpg", "name": "TX2_LV_CABLE_SPLIT"}
+    },
+    "FEEDER_PILLAR_FP1": {
+      "page": 43,
+      "overview": {"visual": "85.jpg", "ir": "86.jpg", "name": "FP1_OVERVIEW", "wide_angle_preferred": true}
+    },
+    "FEEDER_PILLAR_FP2": {
+      "page": 44,
+      "overview": {"visual": "87.jpg", "ir": "88.jpg", "name": "FP2_OVERVIEW", "wide_angle_preferred": true}
+    },
+    "BLACK_BOX_1": {
+      "page": 45,
+      "overview": {"visual": "89.jpg", "ir": "90.jpg", "name": "BLACK_BOX_1_OVERVIEW"}
+    },
+    "BLACK_BOX_2": {
+      "page": 46,
+      "overview": {"visual": "91.jpg", "ir": "92.jpg", "name": "BLACK_BOX_2_OVERVIEW"}
+    },
+    "BATTERY_BANK_1": {
+      "page": 47,
+      "overview": {"visual": "93.jpg", "ir": "94.jpg", "name": "BATTERY_BANK_1_OVERVIEW"}
+    },
+    "BATTERY_BANK_2": {
+      "page": 48,
+      "overview": {"visual": "95.jpg", "ir": "96.jpg", "name": "BATTERY_BANK_2_OVERVIEW"}
+    },
+    "BATTERY_BANK_3": {
+      "page": 49,
+      "overview": {"visual": "97.jpg", "ir": "98.jpg", "name": "BATTERY_BANK_3_OVERVIEW"}
+    },
+    "BATTERY_BANK_4": {
+      "page": 50,
+      "overview": {"visual": "99.jpg", "ir": "100.jpg", "name": "BATTERY_BANK_4_OVERVIEW"}
+    }
+  },
+  "renaming_rules": {
+    "visual_odd_numbers": true,
+    "thermal_ir_even_numbers": true,
+    "spare_prefix": "A",
+    "spare_digit_padding": 4,
+    "safe_two_phase_staging": true,
+    "overview_selection_rule": "PRIORITIZE_WIDEST_ANGLE_AND_DISTANCE",
+    "dynamic_csv_driven": true
+  }
+}

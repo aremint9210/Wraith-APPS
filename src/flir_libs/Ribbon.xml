@@ -1,0 +1,64 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad" loadImage="GetImage">   
+ 
+  <ribbon>
+    <tabs>
+      <tab id="ID_ThermaCAMReporter" getLabel="GetLabel2"  getVisible="GetVisible">
+
+        <group id="GraphicDisplayGroup" getLabel="GetLabel2">
+           <button id="IRViewer.IRViewer.1" tag="IR Viewer" image="IRViewer.IRViewer.1" size="large" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="IRPhoto.IRPhoto.1" tag="IR Photo" image="IRPhoto.IRPhoto.1" size="large" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="IRProfile.IRProfile.1" tag="IR Profile" image="IRProfile.IRProfile.1" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="IRHistogram.IRHistogram.1" tag="IR Histogram" image="IRHistogram.IRHistogram.1" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="IRTrending.IRTrending.1" tag="IR Trending" image="IRTrending.IRTrending.1" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="QuickInsert" tag="Quick Insert" image="QuickInsert" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="ConnectIFD" tag="Connect IFD" image="ConnectIFD" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           <button id="DeleteIFD" tag="Delete Graphic Display" image="DeleteIFD" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+        </group>
+
+        <group id="TextDisplayGroup" getLabel="GetLabel2"> 
+          <button id="IRField.IRField.1" tag="IR Field" image="IRField.IRField.1" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+          <button id="IRTable.IRTable.1" tag="IR Table" image="IRTable.IRTable.1" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+          <button id="IRSummaryTable.IRSummaryTable.1" tag="IR SummaryTable" image="IRSummaryTable.IRSummaryTable.1" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>          
+        </group>
+
+        <group id="MiscGroup" getLabel="GetLabel2">
+          <box id="PageBox" boxStyle="vertical">
+            <button id="DeletePage" tag="Delete Current Page" image="DeletePage" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+            <button id="DuplicatePage" tag="Duplicate Current Page" image="DuplicatePage" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+          </box>
+          <box id="SettingsBox" boxStyle="vertical">
+            <button id="CreatePDF" tag="Create PDF Document" image="CreatePDF" size="normal" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+            <button id="ExportDB99" tag="Export To DB99" image="ExportDB99" size="normal" getLabel="GetLabel" getVisible="GetVisible" getEnabled="GetEnabled" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+            <button id="EditDocProperties" tag="Edit Defined Doc Properties" image="EditDocProperties" size="normal" getLabel="GetLabel" getVisible="GetVisible" getEnabled="GetEnabled" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+          </box>
+        </group>   
+        
+         <group id="EndGroup" getLabel="GetLabel2">
+
+           <button id="ToggleTaskPane" tag="Task Pane" size="large" image="ToggleTaskPane" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+           
+            <menu id="MenuHelp" size="large" getLabel="GetLabel2" image="OpenHTMLHelp">
+              <button id="OpenHTMLHelp" tag="Show Help" image="OpenHTMLHelp"   getLabel="GetLabel"     getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+              <button id="ContextHelp"  tag="Task Pane" image="ToggleTaskPane" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+              <button id="OpenManualHelp" tag="Open Manual" image="OpenManualHelp" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+            </menu>
+          
+             <menu id="MenuAbout" size="large" getLabel="GetLabel2" image="StartButton">
+              <button id="StartButton" tag="FLIR Start" image="StartButton" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+              <button id="CheckUpdates" tag="Check for Updates" image="CheckUpdates" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+              <button id="SetUnits" tag="Set Units" image="SetUnits" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+               <button id="DB99Settings" tag="DB99 Settings" image="ExportDB99" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+               <button id="ApplyIRVGlobally" tag="Apply IRV Globally" image="ApplyIRVGlobally" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>  
+               <button id="SelectLanguage" tag="Select Language" image="SelectLanguage" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible" getScreentip="GetScreentip" onAction="ButtonClicked"/>
+              <button id="EndButton" tag="FLIR End" image="EndButton" getLabel="GetLabel" getEnabled="GetEnabled" getVisible="GetVisible"  getScreentip="GetScreentip" onAction="ButtonClicked"/>
+            </menu>
+
+         </group>
+
+   </tab>
+    
+   </tabs>     
+
+ </ribbon>     
+
+</customUI>
